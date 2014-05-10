@@ -48,7 +48,9 @@ Inserte la tarjeta SD en su computador. Recuerde que toda la información que te
 
 Ejecute el instalador de Pi escribiendo el siguiente comando en la Terminal:
 
+´´´
 >sudo./install Occidentalis_v02.img
+´´´
 
 'Occidentalir_v02.img' es el nombre del archivo .img que corresponde a la distribución que desea instalar.
 
