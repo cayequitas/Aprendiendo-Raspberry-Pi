@@ -54,9 +54,9 @@ Ejecute el instalador de Pi escribiendo el siguiente comando en la Terminal:
 
 'Occidentalir_v02.img' es el nombre del archivo .img que corresponde a la distribución que desea instalar.
 
-Se le pedirá que ingrese la clave de su computador, y luego verá la siguiente pantalla:en el paso anterior, en este ejemplo `192.168.2.5` es la IP de mi Pi.
+Se le pedirá que ingrese la clave de su computador, y luego verá la siguiente pantalla:
 
-![](images/imagen3)
+![](images/imagen3.png)
 
 Su tarjeta SD ahora está lista para ser utilizada con su Raspberry Pi
 
