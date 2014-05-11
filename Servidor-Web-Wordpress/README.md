@@ -215,18 +215,17 @@ Copie este texto, regrese a la terminal en su Pi y edite el archivo con `nano wp
 
 Haga click en el botón `Run the install`.
 
-### Welcome screen
-
-Now you're getting close.
+### Pantalla de bienvenida
 
 ![](images/wp-info.png)
 
-Fill out the information: give your site a title, create a username and password, put in your email address and untick the search engines box. Hit the `Install WordPress` button, then log in using the account you just created.
+Llene la siguiente información: dele un nombre a su site, cree un usuario y una contraseña, ingrese su dirección de correo electrónico y des-seleccione la casilla de motores de búsqueda. Haga click en el botón de `Install WordPress` , e ingrese usando los datos de la cuenta que acaba de crear.
 
-Now you're logged in and have your site set up, you can see the website by visiting your IP address in the browser on the Pi or another computer on the network. To log in again (or on another computer), go to `http://YOUR-IP-ADDRESS/wp-admin`.
+Ahora que se encuentra loggeado en su cuenta y tiene listo su site, puede ver su website visitando su dirección IP en el explorador de su Pi o cualquier otro computador conectado a su misma red. Para volver a ingresar a su cuenta (desde otro computador), vaya a  `http://YOUR-IP-ADDRESS/wp-admin` en el explorador.
 
-### Friendly permalinks
+### Permalinks más sencillos
 
+Es muy recomendable que cambie los settings de sus _permalinks_ para hacer sus URLs más sencillas. Para ello, ingrese a su cuenta en WordPress y vaya al _dashboard_ 
 It's recommended that you change your permalink settings to make your URLs more friendly. To do this, log in to WordPress and go to the dashboard. Go to `Settings` then `Permalinks`. Select the `Post name` option and click `Save Changes`. After saving, you will be prompted to update your `.htaccess` file. You probably don't have one yet, so add one in `/var/www/` by typing `nano .htaccess`; note this is a hidden file, so it starts with a dot. Then paste in the contents provided:
 
 ```
