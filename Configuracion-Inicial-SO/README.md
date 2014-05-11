@@ -12,9 +12,9 @@ Para comenzar, empezaremos con las características más importantes, y luego mi
 
 Por defecto, su Pi sólo utilizará el espacio en la tarjeta SD que el sistema operativo instalado requiera, así que es posible que si tiene una tarjeta SD de gran capacidad, el sistema operativo desaprobeche una gran porción. Para evitar esto, seleccione la opción de menú `expand_roofts` y presione ENTER
 
-Luego de esto, verá una pantalla de confirmación. Presione ENTER nuevamente para regresar al menú principal.
-
 ![](images/imagen2.png)
+
+Luego de esto, verá una pantalla de confirmación. Presione ENTER nuevamente para regresar al menú principal.
 
 ![](images/imagen3.png)
 
