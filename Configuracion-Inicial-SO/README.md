@@ -18,5 +18,30 @@ Luego de esto, verá una pantalla de confirmación. Presione ENTER nuevamente pa
 
 ![](images/imagen3.png)
 
+## Pantalla
 
+Puesto que fue hecho para funcionar con televisores, es posible que su Pi sólo use una parte de la pantalla, dejando la mayor parte sin utilizar. Si es éste su caso, seleccione la opción `Disable Overscan`para solucionar este problema.
 
+![](images/imagen4.png)
+
+## Zona Horaria
+
+Primero, sleccione el área geográfica, y luego la zona horaria dentro de esa área.
+
+![](images/imagen5.png)
+
+![](images/imagen6.png)
+
+![](images/imagen7.png)
+
+## Iniciar el Escritorio
+
+Raspberyy Pi, por defecto, no inicia con una interfaz gráfica de ventanas, tan sólo muestra una terminal donde puede ingresar y escribir comandos de texto.
+
+La siguiente configuración le permitirá iniciar en un sistema de ventanas la próxima vez que inicialice su Raspberry Pi.
+
+En el menú principal, escoja la opción `boot behavior` y cambie la configuración a sì.
+
+![](images/imagen8.png)
+
+![](images/imagen9.png)
