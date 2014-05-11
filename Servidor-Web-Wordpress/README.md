@@ -62,11 +62,9 @@ Trate de editar este archivo y después darle refresh a su browser para ver los 
 
 ## Paso 2: Instalar PHP
 
-PHP es un pre-procesador; es un codigo que corre cuando el servicode recibe un pedido de una página web. Éste controla que es lo que necesita mostrar en la página, luego se la manda directamente al browser. A diferencia del HTML estático, PHP puede mostrar diferentes contenidos bajo circunstancias diferentes. Otros lenguajes son también capaces de hacer esto, pero debido a que WordPress está hecho en PHP, es el que uilizaremos. Grandes proyectos en Internet, como Facebook y Wikipedia, fueron escritos en 
-------------------1
-PHP is a preprocessor; it's code that runs when the server receives a request for a web page. It runs, works out what needs to be shown on the page, then sends that page to the browser. Unlike static HTML, PHP can show different content under different circumstances. Other languages are capable of this, but since WordPress is written in PHP, that's what we need to use this time. PHP is a very popular language on the web; large projects like Facebook and Wikipedia are written in PHP.
+PHP es un pre-procesador; es un codigo que corre cuando el servicode recibe un pedido de una página web. Éste controla que es lo que necesita mostrar en la página, luego se la manda directamente al browser. A diferencia del HTML estático, PHP puede mostrar diferentes contenidos bajo circunstancias diferentes. Otros lenguajes son también capaces de hacer esto, pero debido a que WordPress está hecho en PHP, es el que uilizaremos. Grandes proyectos en Internet, como Facebook y Wikipedia, fueron escritos en PHP.
 
-Instalar PHP y los paquetes de Apache con los siguientes comandos:
+Instale PHP y los paquetes de Apache con los siguientes comandos:
 
 ```
 sudo apt-get install php5 libapache2-mod-php5 -y
@@ -75,7 +73,6 @@ sudo apt-get install php5 libapache2-mod-php5 -y
 ### Probar PHP
 
 Ahora debe mover el archivo `index.html` a `index.php` de la siguiente manera:
-
 
 ```
 sudo mv index.html index.php
@@ -87,8 +84,7 @@ Edite este archivo desde el super usuario `sudo`:
 sudo nano index.php
 ```
 
-Ahora agregue un poco de contenido PHP en el archivo, así:
-
+Ahora agregue un poco de contenido PHP en el archivo, por ejemplo el siguiente mensaje:
 
 ```
 <?php echo "hello world";
@@ -106,9 +102,9 @@ O digámole que nos muestre nuestra información de PHP:
 
 ## Paso 3: Instalar MySQL
 
-MySQL (pronounced *My Sequel* or *My S-Q-L*) is a popular database engine. Like PHP, its overwhelming presence on web servers enhanced its popularity. This is why projects like WordPress use it, and why those projects are so popular.
+MySQL es un sistema de bases de datos relacional. Como PHP, es muy popular en los servidores web. WordPress es apenas uno de los muchos proyectos que lo utiliza.
 
-Install the MySQL Server and PHP-MySQL packages by entering the following command into the terminal:
+Instale el servidor MySQL y los paquetes PHP-MySQL ingresando el siguiente comando en la terminal:
 
 ```
 sudo apt-get install mysql-server php5-mysql -y
