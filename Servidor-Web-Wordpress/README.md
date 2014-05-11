@@ -109,15 +109,15 @@ Instale el servidor MySQL y los paquetes PHP-MySQL ingresando el siguiente coman
 ```
 sudo apt-get install mysql-server php5-mysql -y
 ```
-
-When installing MySQL you will be asked for a root password. You'll need to remember this to allow your website to access the database.
+Mientras instala MySQL, se le pedira una contraseña _root_. Deberá recordar esta contraseña para permitirle a su website ingresas luego a la base de datos.
 
 ## Paso 4: Descargar WordPress
+
 ----------------2
 
-You can download WordPress from [wordpress.org](http://wordpress.org/) using the `wget` command. Helpfully, a copy of the latest version of WordPress is always available at [wordpress.org/latest.tar.gz](https://wordpress.org/latest.tar.gz) and [wordpress.org/latest.zip](https://wordpress.org/latest.zip), so you can grab the latest version without having to look it up on the website. At the time of writing, this is version 3.8.1.
+Puede descargar WordPress de [wordpress.org](http://wordpress.org/) utilizando el comando `wget`. Una versión actualizada de WordPress está siempre disponible en [wordpress.org/latest.tar.gz](https://wordpress.org/latest.tar.gz) y en [wordpress.org/latest.zip](https://wordpress.org/latest.zip).
 
-Navigate to `/var/www/`, and download WordPress to this location. You'll need to empty the folder first (be sure to check you're not deleting files you need before running `rm`); change the ownership of this folder to the `pi` user too.
+Vaya a `/var/www/`, y descargue WordPress en esta ubicación. Antes de esto, deberá vaciar el contenido de esta carpeta. Cambie también las propiedasdes de usuario de esta carpeta al usuario `pi`.
 
 ```
 cd /var/www
@@ -126,7 +126,7 @@ rm *
 wget http://wordpress.org/latest.tar.gz
 ```
 
-Now extract the tarball, move the contents of the folder it extracted (`wordpress`) to the current directory and remove the (now empty) folder and the tarball to tidy up:
+Extraiga el paquete de archivos, mueva el contenido de la carpeta extraida (`wordpress`) al directorio actual y luego, remueva la carpeta y el paquete de archivos para finalizar:
 
 ```
 tar xzf latest.tar.gz
@@ -134,7 +134,7 @@ mv wordpress/* .
 rm -rf wordpress latest.tar.gz
 ```
 
-Running the `ls` or (`tree -L 1`) command here will show you the contents of a WordPress project:
+Ejecutar el comando `ls` o el comando (`tree -L 1`)  en este momento le mostrará los contenidos del proyecto en WordPress:
 
 ```
 .
@@ -159,65 +159,61 @@ Running the `ls` or (`tree -L 1`) command here will show you the contents of a W
 └── xmlrpc.php
 ```
 
-This is the source of a default WordPress installation. The files you edit to customise your installation belong in the `wp-content` folder.
+Esto es la fuente de una instalación de WorPress predeterminanda. Los archivos que usted edit para personalizar la instalación pertenecen a la carpeta `wp-content`.
 
-## Step 5: Set up your WordPress Database
+## Paso 5: Set Up de una Base de Datos en WordPress
 
-To get your WordPress site set up, you need a database. Run the `mysql` command in the terminal and provide your login credentials (e.g. username `root`, password `password`):
+Para dejar listo su site en WordPress, necesitará una base de datos. Ejecute el comando `mysql` en la terminal y escriba sus datos de usuario (e.g. usuario `root`, contraseña `password`):
 
 ```
 mysql -uroot -ppassword
 ```
+En el anterior comando usted dio la contraseña (la palabra `password`) en la línea de comando; note que no hay un espacio entre `-p` y su contraseña.
 
-Here I have provided my password (the word `password`) on the command line; there is no space between `-p` and your password.
-
-Alternatively you can simply supply an empty `-p` flag and wait to be asked for a password:
+Otra opción es escribir simplemente `-p` y esperar a que le sea pedida su contraseña:
 
 ```
 mysql -uroot -p
 ```
+Ahora se le pedirá que ingrese la contraseña de usuario _root_ que creo anteriormente.
 
-Now you will be prompted to enter the root user password you created earlier.
-
-Once you're connected to MySQL, you can create the database your WordPress installation will use:
+Una vez conectado con el servidor MySQL, puede crear la base de datos que su instalación de WordPress utilizará:
 
 ```
 mysql> create database wordpress;
 ```
-
-Note the semi-colon ending the statement. On success you should see the following message:
+Hecho correctamente, deberá ver el siguiente mensaje:
 
 ```
 Query OK, 1 row affected (0.00 sec)
 ```
+Salga del prompt de MySQL con `Ctrl + D`.
 
-Exit out of the MySQL prompt with `Ctrl + D`.
+## Paso 6: Configuración de WordPress.
 
-## Step 6: WordPress Configuration
+Necesitará averiguar la dirección IP de su Raspberry Pi en el explorador. Para esto, escriba el comando `hostname -I` en la terminal.
 
-You need to find out your Pi's IP address to access it in the browser, so in a terminal type the command `hostname -I`.
+Vaya a `http://YOUR-IP-ADDRESS`  (e.g. `http://192.168.1.5`) en explorador de su Pi.
 
-Navigate to `http://YOUR-IP-ADDRESS` e.g. `http://192.168.1.5` in the web browser on your Pi.
+A continuación, deberá ver una página de error de WordPress; esto no es algo malo, es parte del proceso. Haga click en el botón de `Create a Configuration File` y luego en el botón `Let's go!` en la siguiente página.
 
-You should see a WordPress error page; this is good! Click the big button marked `Create a Configuration File` followed by the `Let's go!` button on the next page.
-
-Now fill out the basic site information as follows:
+Llene la información requerida de esta forma:
 
 ```
 Database Name:      wordpress
 User Name:          root
-Password:           <YOUR PASSWORD>
+Password:           <SU CONTRASEÑA>
 Database Host:      localhost
 Table Prefix:       wp_
 ```
 
-Upon successful database connection, you will be given the contents of your `wp-config.php` file:
+Si la conexión con la base de datos es exitosa, le serán dados los contenidos de su archivo `wp-config.php`:
 
 ![](images/wp-config.png)
 
-Copy this text, return to the terminal on the Pi and edit the file with `nano wp-config.php`. Paste the text into this file, and save and exit with `Ctrl + X`, then `Y` for yes and `Enter`.
+Copie este texto, regrese a la terminal en su Pi y edite el archivo con `nano wp-config.php`. Pegue el texto en este archivo, y luego grave y ságase con `Ctrl + X`, luego `Y` para confirmar y `Enter`.
 
-Now hit the `Run the install` button.
+Haga click en el botón `Run the install`.
 
 ### Welcome screen
 
