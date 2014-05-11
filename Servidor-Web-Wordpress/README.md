@@ -62,7 +62,7 @@ Trate de editar este archivo y después darle refresh a su browser para ver los 
 
 ## Paso 2: Instalar PHP
 
-PHP es un pre-procesador; es un codigo que corre cuando el servicode recibe un pedido de una página web. Éste controla que es lo que necesita mostrar en la página, luego se la manda directamente al browser. A diferencia del HTML estático, PHP puede mostrar diferentes contenidos bajo circunstancias diferentes. Otros lenguajes son también capaces de hacer esto, pero debido a que WordPress está hecho en PHP, es el que uilizaremos. Grandes proyectos en Internet, como Facebook y Wikipedia, fueron escritos en PHP
+PHP es un pre-procesador; es un codigo que corre cuando el servicode recibe un pedido de una página web. Éste controla que es lo que necesita mostrar en la página, luego se la manda directamente al browser. A diferencia del HTML estático, PHP puede mostrar diferentes contenidos bajo circunstancias diferentes. Otros lenguajes son también capaces de hacer esto, pero debido a que WordPress está hecho en PHP, es el que uilizaremos. Grandes proyectos en Internet, como Facebook y Wikipedia, fueron escritos en 
 ------------------1
 PHP is a preprocessor; it's code that runs when the server receives a request for a web page. It runs, works out what needs to be shown on the page, then sends that page to the browser. Unlike static HTML, PHP can show different content under different circumstances. Other languages are capable of this, but since WordPress is written in PHP, that's what we need to use this time. PHP is a very popular language on the web; large projects like Facebook and Wikipedia are written in PHP.
 
