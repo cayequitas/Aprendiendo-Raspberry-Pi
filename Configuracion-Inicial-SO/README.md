@@ -45,3 +45,25 @@ En el menú principal, escoja la opción `boot behavior` y cambie la configuraci
 ![](images/imagen8.png)
 
 ![](images/imagen9.png)
+
+### Otras configuraciones
+
+`configure_keyboard` Permite escoger entre varias configuraciones de teclado 
+
+`change_pass` Permite cambiar la clave de seguridad de su Raspberry Pi. Por defecto, esta clave siempre es _raspberry_
+
+`memory_split` Permite decidir qué porcentaje de la memoria se utilizará para procesar gráficos y qué porcentaje como procesador principal.
+
+`ssh`Permite abilitar _ssh_ para poder controlar su Pi desde otro computador.
+
+`update`Este opción busca nuevas versiones de *Raspi_Config* y las descarga. 
+
+
+
+
+
+
+
+
+
+
