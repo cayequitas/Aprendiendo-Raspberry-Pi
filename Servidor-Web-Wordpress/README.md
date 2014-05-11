@@ -56,13 +56,13 @@ Esto quiere decir que existe un archivo en `/var/www/` que se llama `index.html`
 5. El tamaño del archivo
 6. La última modificación, fecha y hora
 
-Como se puede ver, el directorio `www` y el archvico `index.html` son archivos del superusuario o `root` user. Para editar el archivo, se debe tener el permiso antes de empezar a editar, para esto se puede hacer de dos maneras. La primera se cambia de usuario antes de editar el archivo usando `sudo chwon pi: index.html` o también se puede con el comando `sudo` directamente `sudo nano index.html`.
+Como se puede ver, el directorio `www` y el archivo `index.html` son archivos del superusuario o `root` user. Para editar el archivo, se debe tener el permiso antes de empezar a editar, esto se puede hacer de dos maneras. La primera se cambia de usuario antes de editar el archivo usando `sudo chwon pi: index.html` o también se puede con el comando `sudo` directamente `sudo nano index.html`.
 
 Trate de editar este archivo y después darle refresh a su browser para ver los cambios en la página web.
 
 ## Paso 2: Instalar PHP
 
-PHP es un pre-procesador; es un codigo que corre cuando el servicodr recibe un request de una página web. Este controla que es lo que necesita mostrar en la página, luego se la manda directamente al browser.
+PHP es un pre-procesador; es un codigo que corre cuando el servicode recibe un pedido de una página web. Éste controla que es lo que necesita mostrar en la página, luego se la manda directamente al browser. A diferencia del HTML estático, PHP puede mostrar diferentes contenidos bajo circunstancias diferentes. Otros lenguajes son también capaces de hacer esto, pero debido a que WordPress está hecho en PHP, es el que uilizaremos. Grandes proyectos en Internet, como Facebook y Wikipedia, fueron escritos en PHP
 ------------------1
 PHP is a preprocessor; it's code that runs when the server receives a request for a web page. It runs, works out what needs to be shown on the page, then sends that page to the browser. Unlike static HTML, PHP can show different content under different circumstances. Other languages are capable of this, but since WordPress is written in PHP, that's what we need to use this time. PHP is a very popular language on the web; large projects like Facebook and Wikipedia are written in PHP.
 
