@@ -61,7 +61,7 @@ Se le pedirá que ingrese la clave de su computador, y luego verá la siguiente 
 Su tarjeta SD ahora está lista para ser utilizada con su Raspberry Pi
 
 ## PASO 3:
-## Configuración y Pruebas
+## Configuración y pruebas
 
 Luego de haber instalado el sistema operativo en la tarjeta SD, querrá probar el resultado. Hacer esto es sencillo.
 
