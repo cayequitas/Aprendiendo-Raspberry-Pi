@@ -225,8 +225,7 @@ Ahora que se encuentra loggeado en su cuenta y tiene listo su site, puede ver su
 
 ### Permalinks más sencillos
 
-Es muy recomendable que cambie los settings de sus _permalinks_ para hacer sus URLs más sencillas. Para ello, ingrese a su cuenta en WordPress y vaya al _dashboard_ 
-It's recommended that you change your permalink settings to make your URLs more friendly. To do this, log in to WordPress and go to the dashboard. Go to `Settings` then `Permalinks`. Select the `Post name` option and click `Save Changes`. After saving, you will be prompted to update your `.htaccess` file. You probably don't have one yet, so add one in `/var/www/` by typing `nano .htaccess`; note this is a hidden file, so it starts with a dot. Then paste in the contents provided:
+Es muy recomendable que cambie los settings de sus _permalinks_ para hacer sus URLs más sencillas. Para ello, ingrese a su cuenta en WordPress y vaya al _dashboard_. Una vez ahí vaya a `Settings`y luego `Permalinks`. Seleccione la opción `Post name`y haga click en `Save changes`. Luego de haber guardado, le será pedido que actualice su archivo `htaccess`. Probablemente usted no tenga uno todavía, así que agréguelo en `/var/www/` escribiendo `nano .htaccess`; note que éste es un archivo oculto, razón por la cual empieza por un punto. Pegue los contenidos dados:
 
 ```
 <IfModule mod_rewrite.c>
@@ -239,11 +238,11 @@ RewriteRule . /index.php [L]
 </IfModule>
 ```
 
-Save the file and return to the website homepage. Click on the post title or the sample page link and you'll probably see a `Not Found` error page. This is because the `rewrite` module has not been enabled in Apache. To do this, enter `sudo a2enmod rewrite`.
+Guarde el archivo y regrese a la página principal de su website. Haga click en el título del post o en el link de la página de prueba y seguramente verá una página de error `Not Found`. Esto sucede porque el módulo `rewrite` no ha sido activado en Apache. Para hacerlo, ingrese `sudo a2enmod rewrite` en la terminal.
 
-You'll also need to tell the virtual host serving the site to allow requests to be overwritten. Do this by editing the virtual host file (with root permissions): `sudo nano /etc/apache2/sites-available/default`; also, change the `AllowOverride` setting on line 11 (inside the `<Directory /var/www/>` block) from `None` to `All`. Save the file and then restart Apache with `sudo service apache2 restart`. Once it's restarted, refresh the page and it should load successfully. Now posts have URLs like `/hello-world/` instead of `/?p=123`, and pages have URLs like `/sample-page/` instead of `/?page_id=2`.
+También deberá decirle al host virtual que aloja su site que permita que los pedidos sean sobre-escritos, haga esto editando el archivo del host virtual (con permisos del _root_): `sudo nano /etc/apache2/sites-available/default`; Cambie también el setting de `AllowOverride` en la línea 11 (dentro del bloque `<Directory /var/www/>`) de `None` a `All`. Guarde el archivo y reinicie Apache con `sudo service apache2 restart`. Una vez reiniciado, refresque la página y deberá cargar correctamente. Ahora, los posts tendrán URLs como `/hello-world/` en vez de `/?p=123`, y las páginas URLs como `/sample-page/` en vez de `/?page_id=2`.
 
-### Customisation
+### Personalización
 
 WordPress is very customisable. By clicking your site name in the WordPress banner along the top of the page (when logged in), you'll be taken to the Dashboard. From here you can change the theme, add pages and posts, edit the menu, add plugins and lots more. This is just a taster for getting something interesting set up on the Raspberry Pi's web server.
 
