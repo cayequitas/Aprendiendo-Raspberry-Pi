@@ -244,7 +244,7 @@ También deberá decirle al host virtual que aloja su site que permita que los p
 
 ### Personalización
 
-WordPress is very customisable. By clicking your site name in the WordPress banner along the top of the page (when logged in), you'll be taken to the Dashboard. From here you can change the theme, add pages and posts, edit the menu, add plugins and lots more. This is just a taster for getting something interesting set up on the Raspberry Pi's web server.
+WordPress es extremadamente personalizable. Haciendo click en el nombre de su site en el banner de WordPress en la parte superior de la página (debe hacerlo mientras está dentro de su cuenta), será re-dirigido al Dashboard. Desde acá puede cambiar el tema principal del site, agregar páginas y posts, editar el menú, agregar plugins, y mucho más.
 
 ## Licence
 
