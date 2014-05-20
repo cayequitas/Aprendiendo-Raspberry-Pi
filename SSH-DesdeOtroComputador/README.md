@@ -17,11 +17,11 @@ La IP que puede ver es la del Pi por lo tanto la copiamos para utilizarla en el 
 
 Una vez sabiendo la IP del Pi, procedemos a abrir la terminal. En ella vamos a usar el secure shell o SSH para entrar a nuestro Pi. Introducimos el siguiente comando `ssh pi@192.168.2.5`. Es aca en donde se debe poner la IP que buscaron en el paso anterior, en este ejemplo `192.168.2.5` es la IP de mi Pi.
 
-![](images/ssh.png)
+![](images/wp_login.jpg
 
 Al darle enter, nos va a preguntar por dos cosas, primero por unos permisos y enseguida por el password del Pi, este por default es `raspberry`, si al momento de inciar el Raspbian pusieron otra clave es aqui donde deben utilizarla. Para seguir con los permisos este pregunta que si deseo continuar `[yes/no]` deben escribir `yes` y darle click. Luego escribo el password `raspberry` le doy enter y listo!!! estoy controlando mi Pi desde otro computador!!
 
-![](images/sshPi@192.168.2.5.png)
+![](images/wp_siguiente.jpg)
 
 
 
